@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './sidebar.css';
 
 class Sidebar extends Component {
-  toggleMenu() {
-    // this.setState();
-    console.log('you clicked me');
-  }
+  
 
   render() {
     return (
