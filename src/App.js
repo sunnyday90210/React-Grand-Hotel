@@ -21,7 +21,7 @@ class App extends Component {
 
     return (
       <div>
-        <Sidebar />
+        <Sidebar menuClickHandeler={this.drawerToggleClickHandler} />
         {navbar}
       </div>
     );
