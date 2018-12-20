@@ -14,15 +14,10 @@ class App extends Component {
   };
 
   render() {
-    let navbar;
-    if (this.state.navbarOpen) {
-      navbar = <Navbar />;
-    }
-
     return (
       <div>
         <Sidebar menuClickHandeler={this.drawerToggleClickHandler} />
-        {navbar}
+        <Navbar show={this.state.navbarOpen} />
       </div>
     );
   }

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import './navbar.css';
+import './Navbar.css';
 
 class Navbar extends Component {
-  
-
   render() {
+    let navbarClasses = 'navigation';
+    if (this.props.show) {
+      navbarClasses = 'navigation open';
+    }
+
     return (
-      <nav className="navigation">
+      <nav className={navbarClasses}>
         <div className="navigation-header">
           <h1 className="navigation-heading">Grand Hotel</h1>
 
