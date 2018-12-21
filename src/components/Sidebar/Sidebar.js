@@ -3,13 +3,27 @@ import './Sidebar.css';
 
 class Sidebar extends Component {
   render() {
+    let rotateClassTop = 'line line-1';
+    if (this.props.show) {
+      rotateClassTop = 'line line-1 rotatetop';
+    }
+    let hideClass = 'line line-2';
+    if (this.props.show) {
+      hideClass = 'line line-2 hide';
+    }
+
+    let rotateClassBottom = 'line line-3';
+    if (this.props.show) {
+      rotateClassBottom = 'line line-3 rotatebottom';
+    }
+
     return (
       <div className="navbar">
         <div className="sidebar">
           <div className="menu-icon" onClick={this.props.menuClickHandeler}>
-            <div className="line line-1" />
-            <div className="line line-2" />
-            <div className="line line-3" />
+            <div className={rotateClassTop} />
+            <div className={hideClass} />
+            <div className={rotateClassBottom} />
           </div>
           <ul className="social-icons-list">
             <li>

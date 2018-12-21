@@ -50,6 +50,16 @@
   cursor: pointer;
 }
 
-.sidebar.line-1 {
-  transform: rotate(-405deg);
+.line.line-1.rotatetop {
+  transform: rotate(-405deg) translate(-5px, 6px);
+  width: 2.5rem;
+}
+
+.line.line-2.hide {
+  opacity: 0;
+}
+
+.line.line-3.rotatebottom {
+  transform: rotate(405deg) translate(-5px, -6px);
+  width: 2.5rem;
 }
