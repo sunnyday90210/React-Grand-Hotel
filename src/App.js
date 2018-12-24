@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
+import AboutUs from './components/AboutUs/AboutUs';
 
 class App extends Component {
   state = {
@@ -23,6 +24,7 @@ class App extends Component {
         />
         <Navbar show={this.state.navbarOpen} />
         <Header />
+        <AboutUs />
       </div>
     );
   }
