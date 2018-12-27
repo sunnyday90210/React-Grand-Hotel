@@ -14,27 +14,27 @@ class Rooms extends Component {
       },
       {
         id: 2,
-        name: 'Single Room',
+        name: 'Double Room',
         desc:
           '350+ sq. ft., USB ports, large laptop safe, refrigerator, WiFi, HDTV, Cuisinart coffeemaker.',
-        price: '$99.00',
-        img: 'img/single-room.jpeg'
+        price: '$199.00',
+        img: 'img/double-room.jpeg'
       },
       {
         id: 3,
-        name: 'Single Room',
+        name: 'Lux',
         desc:
           '350+ sq. ft., USB ports, large laptop safe, refrigerator, WiFi, HDTV, Cuisinart coffeemaker.',
-        price: '$99.00',
-        img: 'img/single-room.jpeg'
+        price: '$299.00',
+        img: 'img/lux.jpeg'
       },
       {
         id: 4,
-        name: 'Single Room',
+        name: 'VIP',
         desc:
           '350+ sq. ft., USB ports, large laptop safe, refrigerator, WiFi, HDTV, Cuisinart coffeemaker.',
-        price: '$99.00',
-        img: 'img/single-room.jpeg'
+        price: '$399.00',
+        img: 'img/vip.jpeg'
       }
     ];
 
@@ -48,11 +48,11 @@ class Rooms extends Component {
           </div>
         </div>
 
-        {rooms.map(room => {
-          return (
-            <div className="rooms-cards-wrapper">
+        <div className="rooms-cards-wrapper">
+          {rooms.map(room => {
+            return (
               <div className="room-card">
-                <img src={room.img} alt="rooms" />
+                <img src={room.img} alt="rooms" className="room-img" />
                 <div className="room-card-content">
                   <h4 className="room-card-heading">{room.name}</h4>
                   <p className="room-card-paragraph">{room.desc}</p>
@@ -63,9 +63,12 @@ class Rooms extends Component {
                   </button>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <div className="rooms-btn-wrapper">
+          <button className="rooms-btn">Check All Rooms</button>
+        </div>
       </section>
     );
   }
