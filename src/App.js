@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import AboutUs from './components/AboutUs/AboutUs';
 import Rooms from './components/Rooms/Rooms';
+import Customers from './components/Customers/Customers';
 
 class App extends Component {
   state = {
@@ -27,6 +28,7 @@ class App extends Component {
         <Header />
         <AboutUs />
         <Rooms />
+        <Customers />
       </div>
     );
   }

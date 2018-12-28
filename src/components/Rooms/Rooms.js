@@ -51,7 +51,7 @@ class Rooms extends Component {
         <div className="rooms-cards-wrapper">
           {rooms.map(room => {
             return (
-              <div className="room-card">
+              <div key={room.id} className="room-card">
                 <img src={room.img} alt="rooms" className="room-img" />
                 <div className="room-card-content">
                   <h4 className="room-card-heading">{room.name}</h4>
