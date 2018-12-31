@@ -117,8 +117,7 @@ const footer = () => {
         </div>
         <div className="text-right">
           <p>
-            Made With <i className="fas fa-heart" /> By{' '}
-            <span>Robert Wollny</span>
+            Made With <i className="fas fa-heart" /> By <span>Robert</span>
           </p>
         </div>
       </div>
