@@ -72,3 +72,42 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 900px) {
+  .banner {
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 4.7rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.6rem;
+  }
+
+  .banner-button {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 100%;
+    margin-top: -10rem;
+  }
+
+  .hotel-heading {
+    font-size: 2rem;
+    margin: auto 0;
+  }
+
+  .banner-heading {
+    font-size: 3rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2rem;
+  }
+}

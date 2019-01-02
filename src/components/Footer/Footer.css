@@ -111,3 +111,45 @@
 .text-right span {
   color: gold;
 }
+
+@media (max-width: 1400px) {
+  .main-part {
+    flex-direction: column;
+  }
+
+  .footer-list {
+    display: flex;
+  }
+
+  .footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-list {
+    display: block;
+  }
+
+  .creator-part {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .copyright-text {
+    order: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-part {
+    padding: 2rem;
+  }
+  .footer-input {
+    width: 12rem;
+  }
+
+  .image-wrapper {
+    width: 9rem;
+  }
+}
