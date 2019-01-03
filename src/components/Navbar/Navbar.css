@@ -86,6 +86,7 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.5s;
+  cursor: pointer;
 }
 
 .navigation-link::before {
