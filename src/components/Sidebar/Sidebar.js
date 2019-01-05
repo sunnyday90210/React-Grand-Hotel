@@ -48,7 +48,7 @@ class Sidebar extends Component {
             </li>
           </ul>
           <div style={year} className="year">
-            <p>2019</p>
+            <p>{this.props.date}</p>
           </div>
         </div>
       </div>

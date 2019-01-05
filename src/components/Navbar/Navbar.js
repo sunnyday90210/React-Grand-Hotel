@@ -97,7 +97,7 @@ class Navbar extends Component {
           </li>
         </ul>
         <div className="copyright">
-          <p>&copy; 2019 Grand Hotel. All Rights Reserved</p>
+          <p>&copy; {this.props.date} Grand Hotel. All Rights Reserved</p>
         </div>
       </nav>
     );

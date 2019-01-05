@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-const footer = () => {
+const footer = props => {
   const image = [
     {
       img: 'img/gallery-img-1.jpeg'
@@ -113,7 +113,7 @@ const footer = () => {
 
       <div className="creator-part">
         <div className="copyright-text">
-          <p>Copyright &copy; 2018. Grand Hotel. All Rights Reserved</p>
+          <p>Copyright &copy; {props.date}. Grand Hotel. All Rights Reserved</p>
         </div>
         <div className="text-right">
           <p>

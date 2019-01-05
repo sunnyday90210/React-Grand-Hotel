@@ -18,19 +18,22 @@ class App extends Component {
     });
   };
 
+  date = new Date().getFullYear();
+
   render() {
     return (
       <div>
         <Sidebar
           menuClickHandeler={this.drawerToggleClickHandler}
           show={this.state.navbarOpen}
+          date={this.date}
         />
-        <Navbar show={this.state.navbarOpen} />
+        <Navbar show={this.state.navbarOpen} date={this.date} />
         <Header />
         <AboutUs />
         <Rooms />
         <Customers />
-        <Footer />
+        <Footer date={this.date} />
       </div>
     );
   }

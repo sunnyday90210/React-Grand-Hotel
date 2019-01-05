@@ -16,6 +16,10 @@
   margin: 1rem 0 3rem 0;
 }
 
+.contact p:nth-child(2) {
+  color: #bbb;
+}
+
 .footer-list {
   list-style: none;
   padding: 0;
